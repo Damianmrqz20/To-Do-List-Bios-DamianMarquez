@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    border: solid #DDDDDD;
+}
+
+header {
+    background-color: rgb(27, 152, 156);
+    padding: 20px ;
+    margin: 5px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 600px;
+    color: rgb(202, 172, 4);
+    border-radius: 8px;
+}
+
+.container {
+    text-align: center;
+    background-color: #16d8d8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    color: rgb(202, 172, 4);
+    margin: 5px;
+}
+
+#tareaInput {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #04b7bd;
+    border: 1px solid #03a5d6;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button-eliminar-tarea {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.button-tarea:hover,
+.button-completar-tarea:hover {
+    background-color: #d32f2f;
+}
+
+.button-completar-tarea {
+    background-color: #029909;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.button-completar-tarea:hover {
+    background-color: #3c8fe2;
+}
+
+.completada {
+    text-decoration: line-through;
+    color: #9e9e9e;
+}
